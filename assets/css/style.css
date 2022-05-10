@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: #020406;
+    color: #adadad;
+}
+a {
+    text-decoration: none;
+}
+.text-right {
+    text-align: end;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolut{
+    position: absolute;
+}
+.mg-bottom {
+    margin-bottom: 20px;
+}
+/* =========================== Menu =========================== */
+
+nav ul {
+    list-style: none;
+}
+nav a{
+    color: #adadad;
+    padding: 5px 10px;
+    display: inline-block;
+}
+nav a {
+    color: #020406;
+}
+.icon-menu {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+}
+nav {
+    position: absolute;
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+    background-color: #adadad;
+    color: #020406;
+    max-height: 100vh;
+    transition: all 2s;
+    z-index: 9;
+}
+nav li:hover a{
+    background-color: #020406;
+    color: #fff;
+}
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 2s;
+}
+ @media(min-width: 768px) {
+    .lg-hidden {
+        display: none;
+    }
+    #main-menu {
+        position: relative;
+        width: 100%;
+        max-height: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: end;
+        margin: 0;
+    }
+    nav a {
+        color: #adadad;
+    }
+    nav li {
+        display: inline-block;
+    }
+ }
+
+/*================================================ Intro ================================================*/
+.draw {
+    position:absolute;
+    max-width: 90%;
+    top: 10vh;
+}
+.draw img {
+    max-width: 100%;
+    height: inherit;
+}
+@media(min-width: 768px) {
+    .draw {
+        position:absolute;
+        width: 100%;
+        max-width: 1080px;
+        left: 0;
+        right: 0;
+        top: 15vh;
+        margin: auto;
+    }
+    .draw img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 5vh;
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+}
+.intro img{
+    width: 140px;
+}
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    margin: 0 10px;
+}
+.main-title {
+    font-size: 2rem;
+    color: #fff;
+}
+.draw2 {
+    position:absolute;
+    max-width: 100%;
+    margin: auto;
+    top: 200px;
+    right: 0;
+    left: 0;
+}
+.draw2 img {
+    max-width: 100%;
+    height: inherit;
+}
+@media(min-width: 768px) {
+    .lg-intro-md {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        top: 20vh;
+        max-width: 100%;
+        width: 100%;
+    }
+    .lg-intro-md img{
+        width: 250px;
+    }
+    .main-title {
+        font-size: 3rem;
+    }
+    .icon {
+        font-size: 2.5rem;
+        margin: 0 20px;
+    }
+    .draw2 {
+        position:absolute;
+        max-width: 100%;
+        margin: auto;
+        top: 250px;
+        right: 0;
+        left: 0;
+    }
+}
+

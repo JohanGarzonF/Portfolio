@@ -1,0 +1,12 @@
+.container {
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
+}
+@media(min-width: 768px) {
+    .lg-container{
+        width: 90%;
+        max-width: 1080px;
+        margin: auto;
+    }
+}

@@ -52,7 +52,7 @@ nav {
     color: #020406;
     max-height: 100vh;
     transition: all 2s;
-    z-index: 9;
+    z-index: 9999;
 }
 nav li:hover a{
     background-color: #020406;
@@ -141,7 +141,7 @@ nav li:hover a{
     position:absolute;
     max-width: 100%;
     margin: auto;
-    top: 200px;
+    top: 250px;
     right: 0;
     left: 0;
 }
@@ -149,8 +149,18 @@ nav li:hover a{
     max-width: 100%;
     height: inherit;
 }
+@media(max-width:576px) {
+    .draw2 {
+        position:absolute;
+        max-width: 100%;
+        margin: auto;
+        top: 280px;
+        right: 0;
+        left: 0;
+    }
+}
 @media(min-width: 768px) {
-    .lg-intro-md {
+    .intro-md {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -160,7 +170,7 @@ nav li:hover a{
         max-width: 100%;
         width: 100%;
     }
-    .lg-intro-md img{
+    .intro-md img{
         width: 250px;
     }
     .main-title {
@@ -172,11 +182,11 @@ nav li:hover a{
     }
     .draw2 {
         position:absolute;
-        max-width: 100%;
-        margin: auto;
-        top: 250px;
-        right: 0;
+        width: 100%;
+        max-width: 1080px;
         left: 0;
+        right: 0;
+        margin: auto;
     }
 }
 

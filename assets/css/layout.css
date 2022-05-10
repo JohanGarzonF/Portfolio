@@ -3,10 +3,10 @@
     max-width: 1080px;
     margin: auto;
 }
-@media(min-width: 768px) {
+/* @media(min-width: 928px) {
     .lg-container{
         width: 90%;
         max-width: 1080px;
         margin: auto;
     }
-}
+} */

@@ -14,11 +14,10 @@
 </head>
 <body>
     <header>
-        
+        <div class="draw md-container">
+            <img src="./assets/img/Group 99.svg" alt="">
+        </div>
         <div class="container">
-            <div class="draw">
-                <img src="./assets/img/Group 99.svg" alt="">
-            </div>
             <div class="text-right lg-hidden">
                 <span onclick="toggleMenu()" class="icon-menu">
                     <img src="./assets/img/menu 1.svg" alt="bars">
@@ -27,13 +26,13 @@
             <nav id="main-menu" class="hidden">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Acerca de mí</a>
+                        <a href="#acerca-de-mi">Acerca de mí</a>
                     </li>
                     <li>
-                        <a href="#">Mis habilidades</a>
+                        <a href="#habilidades">Mis habilidades</a>
                     </li>
                     <li>
                         <a href="#">Experiencia</a>
@@ -48,18 +47,13 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div class="p-relative lg-container">
-            <div class="draw2">
-                <img src="./assets/img/Group 98.svg" alt="">
-            </div>
-        </div>
-        <div class="container p-relative">
-            <div class="intro intro-md p-relative">
-                <div class="mg-bottom personal-img-lg">
+    <section id="home" class="p-relative">
+        <div class="container">
+            <div class="intro intro-md">
+                <span class="mg-bottom personal-img-lg">
                     <img src="./assets/img/Rectangle 45.png" alt="">
-                </div>
-                <h3>Hola soy Johan</h3>
+                </span>
+                <h3>Hola, soy Johan</h3>
                 <h1 class="main-title mg-bottom">Desarrollador web <br> Full-Stack</h1>
                 <div class="icon-container">
                     <span class="icon">
@@ -73,7 +67,50 @@
                     </span>
                 </div>
             </div>
-            
+        </div>
+        <div class="p-relative">
+            <div class="draw2">
+                <img src="./assets/img/ll.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="acerca-de-mi">
+        <div class="container p-relative">
+            <div class="row just-center">
+                <div class="col-12 col-9-md just-center">
+                    <div class="about-me mg-bottom ">
+                        <h2 class="mg-bottom subtitle">Acerca de mí</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illum repellat neque magni a molestiae odit, quis enim, sed saepe vero dicta aperiam, unde ducimus voluptas. Ratione temporibus sint nam iusto voluptates vero molestias, ipsum deleniti eaque, magnam soluta quam, atque eius quis modi! Veritatis et aperiam nesciunt. Delectus praesentium repellat rem consequuntur sequi tempore sed, quibusdam ullam nesciunt obcaecati ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="container">
+            <h2 class="subtitle">Habilidades</h2>
+            <div class="row flex">
+                <div class="col-6 col-md-4">
+                    <div class="circle">
+                        <span class="icon-habilidades"><img src="./assets/img/ant-design_mobile-filled.svg" alt=""></span>
+                        <h3>Mobil app desing</h3>
+                    </div>
+                    <div class="circle">
+                        <span class="icon-habilidades"><img src="./assets/img/mdi_material-design.svg" alt=""></span>
+                        <h3>Creacion de sistemas de Diseño</h3>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="circle">
+                        <span class="icon-habilidades"><img src="./assets/img/mdi_motion.svg" alt=""></span>
+                        <h3>Motion design</h3>
+                    </div>
+                    <div class="circle">
+                        <span class="icon-habilidades"><img src="./assets/img/ic_outline-web-asset.svg" alt=""></span>
+                        <h3>Creacion de sistemas de Diseño</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="./assets/js/function.js"></script>

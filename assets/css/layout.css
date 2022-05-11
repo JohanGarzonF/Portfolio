@@ -21,3 +21,11 @@
 .col-6 {
     width: 50%;
 }
+@media(min-width: 768px){
+    .col-md-3 {
+        width: calc(100%/12 * 3);
+    }
+    .col-md-6 {
+        width: calc(100%/12 * 9);
+    }
+}

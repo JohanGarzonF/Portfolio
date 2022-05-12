@@ -14,6 +14,9 @@ body {
 a {
     text-decoration: none;
 }
+.white-text {
+    color: #fff;
+}
 .text-right {
     text-align: end;
 }
@@ -55,13 +58,18 @@ a {
 nav ul {
     list-style: none;
 }
-nav a{
-    color: #adadad;
+.lettersT a {
+    color: #020406;
     padding: 5px 10px;
     display: inline-block;
+    animation-name: letterTransparent;
+    animation-duration: 3s;
 }
-nav a {
-    color: #020406;
+@keyframes letterTransparent {
+    from{opacity: 0;}
+    100% {
+        opacity: 100%;
+    }
 }
 .icon-menu {
     display: inline-block;
@@ -74,7 +82,6 @@ nav {
     width: 90%;
     text-align: center;
     background-color: #fff;
-    color: #020406;
     max-height: 100vh;
     transition: all 2s;
     z-index: 9;
@@ -87,6 +94,11 @@ nav li:hover a{
     max-height: 0;
     overflow: hidden;
     transition: all 2s;
+}
+.hidden a {
+    color: #020406;
+    padding: 5px 10px;
+    display: inline-block;
 }
 @media(min-width: 768px) {
     .lg-hidden {
@@ -101,8 +113,13 @@ nav li:hover a{
         justify-content: end;
         margin: 0;
     }
-    nav a {
+    #main-menu a {
         color: #adadad;
+        transition: all 1s;
+    }
+    #main-menu li:hover a{
+        color: #fff;
+        transition: all 1s;
     }
     nav li {
         display: inline-block;
@@ -296,4 +313,18 @@ nav li:hover a{
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+}
+/*================================================ Contact ================================================*/
+.icon-contact {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+.icon-contact img{
+    height: 60px;
+    width: 60px;
 }

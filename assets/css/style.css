@@ -315,6 +315,10 @@ nav li:hover a{
     justify-content: center;
 }
 /*================================================ Contact ================================================*/
+.center {
+    text-align: center;
+    height: auto;
+}
 .icon-contact {
     display: inline-flex;
     justify-content: center;

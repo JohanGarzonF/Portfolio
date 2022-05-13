@@ -83,7 +83,7 @@ nav {
     text-align: center;
     background-color: #fff;
     max-height: 100vh;
-    transition: all 2s;
+    transition: all 3s;
     z-index: 9;
 }
 nav li:hover a{
@@ -213,8 +213,7 @@ nav li:hover a{
     .draw2 {
         position:absolute;
         top: 15vh;
-        left: -10px;
-        right: -10px;
+        width: 100%;
     }
     .draw2 img {
         position: relative;
